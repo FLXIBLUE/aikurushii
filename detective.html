@@ -1,177 +1,234 @@
 <!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
-<head>
-	<meta charset="utf-8"><title>人狼メモツール</title>
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-</head>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>メモツール</title>
+  </head>
 
 <body>
-<div id=header>
-	<textarea id="member" class="span5"></textarea>
-	<button type="submit" id="memberInput" class="btn btn-primary">村人登録</button>
-</div>
+  
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">メモツール</a></li>
+<li><a href="#tab2" data-toggle="tab">その他</a></li>
+</ul>
 
-<div id="result">
+
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade in active" id="tab1">
+
+<div id='gray_scale' class='container'>
+  <div id='case1'>
+    <h3>生存数</h3><h3 id="alive"></h3>
+    <h3>グレー数</h3><h3 id="gray"></h3>
+  </div>
+  <div id='case2'>
+    かきくけこ
+  </div>
+  <div id='case3'>
+    さしすせそ
+  </div>
+</div>
+ 
+
 <table class="table table-condensed">
-<tbody>
+
+<tbody id="header_table">
 <tr class="success">
-<th></th><th>役職者</th>
-<th>一日目</th><th>二日目</th><th>三日目</th><th>四日目</th>
-<th>五日目</th><th>六日目</th><th>七日目</th><th>八日目</th>
+<th>名前</th><th>アクション</th><th>CO</th>
+<th>占い1</th><th>占い2</th><th>占い3</th>
+<th>霊能1</th><th>霊能2</th>
+<th>吊り</th><th>噛み</th>
+</tr>
+</tbody>
+<tbody id="urarei_table">
+<tr class="warning">
+<th></th><th></th><th></th>
+<th class="fortune1"></th><th class="fortune2"></th><th class="fortune3"></th>
+<th class="spiritual1"></th><th class="spiritual2"></th>
+<th></th><th></th>
+</tr>
+</tbody>
+
+
+<tbody id="gray_table">
+<tr id="grayList" class='info'>
+<td  colspan='10'>グレー</td>
+</tr>
+
+<tr class="danger">
+<td id='vil1' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 </tr>
 <tr class="danger">
-<td>死体</td><td></td>
-<td><p><a href="#modal01" id='cadevar1' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar2' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar3' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar4' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar5' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar6' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar7' class="modalOpen">Open</a></p>︎</td>
-<td><p><a href="#modal01" id='cadevar8' class="modalOpen">Open</a></p>︎</td>
-<tr class="warning">
-<td>処刑</td><td></td>
-<td><a href="#modal01" id='hanged1' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged2' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged3' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged4' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged5' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged6' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged7' class="modalOpen">Open</a></p>︎</td>
-<td><a href="#modal01" id='hanged8' class="modalOpen">Open</a></p>︎</td>
+<td id='vil2' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr class="danger">
+<td id='vil3' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil4' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil5' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil6' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil8' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil9' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil10' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
+<tr class="danger">
+<td id='vil11' class='villagers'></td>
+<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+</tbody>
 
+
+<tbody id="job_table">
 <tr class="info">
-<td rowspan="2">占い</td>
-<td><a href="#modal01" id='fortune1' class="jobOpen">Open</a></p></td>
-<td id='devined1'></td>
-<td id='devined2'></td>
-<td id='devined3'></td>
-<td id='devined4'></td>
-<td id='devined5'></td>
-<td id='devined6'></td>
-<td id='devined7'></td>
-<td id='devined8'></td>
+	<td colspan='10'>役職</td>
 </tr>
-<tr>
-<td><a href="#modal01" id='fortune2' class="jobOpen">Open</a></p></td>
-<td id='devined1'></td>
-<td id='devined2'></td>
-<td id='devined3'></td>
-<td id='devined4'></td>
-<td id='devined5'></td>
-<td id='devined6'></td>
-<td id='devined7'></td>
-<td id='devined8'></td>
-</tr>
+<tr id="jobList"></tr>
+</tbody>
 
-<tr class="info">
-<td rowspan="2">霊能</td>
-<td><a href="#modal01" id='psychic1' class="jobOpen">Open</a></p></td>
-<td id='spiritual1'></td>
-<td id='spiritual2'></td>
-<td id='spiritual3'></td>
-<td id='spiritual4'></td>
-<td id='spiritual5'></td>
-<td id='spiritual6'></td>
-<td id='spiritual7'></td>
-<td id='spiritual8'></td>
-</tr>
-<td><a href="#modal01" id='psychic2' class="jobOpen">Open</a></p></td>
-<td id='spiritual1'></td>
-<td id='spiritual2'></td>
-<td id='spiritual3'></td>
-<td id='spiritual4'></td>
-<td id='spiritual5'></td>
-<td id='spiritual6'></td>
-<td id='spiritual7'></td>
-<td id='spiritual8'></td>
-</tr>
+<tbody id="death_table">
+<tr class="info"  id='deathList'>
+	<td colspan='10'>死亡</td>
 
-<tr class="success">
-<td>共有</td>
-<td><a href="#modal01" id='share1' class="jobOpen">Open</a></p></td>
-<td><a href="#modal01" id='share2' class="jobOpen">Open</a></p></td>
-<td>狩人</td><td><a href="#modal01" id='hunter' class="jobOpen">Open</a></p></td>
-<td>狐</td><td><a href="#modal01" id='fox' class="jobOpen">Open</a></p></td>
-<td>狂人</td><td><a href="#modal01" id='madness' class="jobOpen">Open</a></p></td>
-<td></td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-
-<div id='count'>吊り数</div>
-
-
-<div id="villege">
-
-	<div id="gray">
-		<div id="gray_list" class="header">グレー</div>
-		<div id="vil1" class="villegers"></div>
-		<div id="vil2" class="villegers"></div>	
-		<div id="vil3" class="villegers"></div>
-		<div id="vil4" class="villegers"></div>
-		<div id="vil5" class="villegers"></div>
-		<div id="vil6" class="villegers"></div>	
-		<div id="vil7" class="villegers"></div>
-		<div id="vil8" class="villegers"></div>
-
-	</div>
-	<div id="job">
-		<div id="job_list" class="header">役職</div>
-	</div>
-	<div id="death">
-		<div id="death_list" class="header">死亡</div>
-	</div>
-
-
+ 
+ 
+  <div id='footer' class='container'>
+  	<textarea id="member" class="span5"></textarea>
+  	<button type="submit" id="memberInput" class="btn btn-primary">村人登録</button>
+    <button type="button" id="testbtn" class="btn-primary btn-xs vil_button">テストボタン</button>
+  </div>
 </div>
 
 
-
-
-
-
-<div class="modal" id="modal01">
-    <div class="overLay modalClose"></div>
-    <div class="inner">
-		<p class="radio-area">
-			占い/霊能　の結果が・・・
-    		<input type="radio" name="lang" value="white">村人
-   			<input type="radio" name="lang" value="black">狼
-		</p>
-    	<div id='vil1b' class='innerBox'></div>
-    	<div id='vil2b' class='innerBox'></div>
-		<div id='vil3b' class='innerBox'></div>
-		<div id='vil4b' class='innerBox'></div>
-    	<div id='vil5b' class='innerBox'></div>
-    	<div id='vil6b' class='innerBox'></div>
-		<div id='vil7b' class='innerBox'></div>
-		<div id='vil8b' class='innerBox'></div>
-     	<div id='vil9b' class='innerBox'></div>
-    	<div id='vil10b' class='innerBox'></div>
-		<div id='vil11b' class='innerBox'></div>
-		<div id='vil12b' class='innerBox'></div>
-     	<div id='vil13b' class='innerBox'></div>
-    	<div id='vil14b' class='innerBox'></div>
-		<div id='vil15b' class='innerBox'></div>
-		<div id='vil16b' class='innerBox'></div>
-		<div id='vil17b' class='innerBox'></div>
-		<div id='heiwa' class='innerBox'>死体なし</div>
- 	</div>
+<div class="tab-pane fade" id="tab2">
+    <p1 class="bg-success">製作者</p>
+    <p2 class="bg-info">@FLXIBLUE</p>
+    <p1 class="bg-success">更新履歴</p>
+    <p2 class="bg-info">2016/12/31:ver1.0</p>
+    <p2 class="bg-info">2017/12/31:ver1.1</p>
 </div>
 
+</div>
+ 
 
+<div class="modal fade" id="jobModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title"></h2>
+      </div>
+      <div class="modal-body">
+        <h2>CO</h2>
+		    <button type="button" class="btn-primary btn-xm co" id="fortune"   data-dismiss="modal">占い師</button>
+      	<button type="button" class="btn-primary btn-xm co" id="spiritual" data-dismiss="modal">霊能</button>
+      	<button type="button" class="btn-primary btn-xm co" id="hunter"    data-dismiss="modal">狩人</button>
+      	<button type="button" class="btn-primary btn-xm co" id="share"     data-dismiss="modal">共有</button></button>
+      	<button type="button" class="btn-primary btn-xm co" id="werewolf"  data-dismiss="modal">狼</button>
+      	<button type="button" class="btn-primary btn-xm co" id="fox"       data-dismiss="modal">狐</button>
+        <button type="button" class="btn-primary btn-xm co" id="cancel"    data-dismiss="modal">キャンセル</button>
+      </div>
 
+<div class="modal-body">
+   <h2>占われ/死亡など</h2>
+  <table class="table table-condensed">
+      <tr class="success">
+      <th></th><th>占い1</th><th>占い2</th><th>占い3</th><th>霊能1</th><th>霊能2</th><th>吊り</th><th>噛み</th>
+      </tr>
+      <tr class="warning">
+        <th></th><th class="fortune1"></th><th class="fortune2"></th><th class="fortune3"></th>
+        <th class="spiritual1"></th><th class="spiritual2"></th><th></th><th></th>
+        <th></th><th></th>
+      </tr>  
+      <tr class="primary">
+      <th>初日</th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white"  data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white2" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black2">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white3" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black3">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm spiritual" id="w"    data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm spiritual" id="w2"   data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b2">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm death" id="hanged"   data-dismiss="modal">吊り</button></th><th>第一犠牲者</th>        
+      </tr>
+      <tr class="primary">
+      <th>二日目</th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white"  data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white2" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black2">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white3" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black3">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm spiritual" id="w"    data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm spiritual" id="w2"   data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b2">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm death" id="hanged"   data-dismiss="modal">吊り</button></th>
+      <th><button type="button" class="btn-primary btn-xm death" id="bite"     data-dismiss="modal">噛まれ</button></th>        
+      </tr>
+      <tr class="primary">
+      <th>三日目</th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white"  data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white2" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black2">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm fortune" id="white3" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black3">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm spiritual" id="w"    data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm spiritual" id="w2"   data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b2">●</button></th>
+      <th><button type="button" class="btn-primary btn-xm death" id="hanged"   data-dismiss="modal">吊り</button></th>
+      <th><button type="button" class="btn-primary btn-xm death" id="bite"     data-dismiss="modal">噛まれ</button></th>        
+      </tr>
+      </tr>
+      <tr class="primary">
+      <th>四日目</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>        
+      </tr>
+      
+    </tbody>
+</table>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
-    <!-- load scripts at the bottom of your page -->
-   	<link rel="stylesheet" type="text/css" href="detective.css">
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="detective.css">
 	<script type="text/javascript" src="detective.js"></script>
-</body>
+  </body>
 </html>
-
