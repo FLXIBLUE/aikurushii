@@ -7,224 +7,335 @@
   </head>
 
 <body>
+  <div id="left">
+    <table class="table table-condensed">
+      <tbody id="header_table">
+        <tr class="info"><td colspan='1'>占い師1</td>
+        <td colspan='2'><h4 id="predict1"></h4></td></tr>
+      </tbody>
+      <tbody id="gray_table">
+        <th class="success grayList" colspan='3'>グレー</th></tr>
+        <th class="gray gray1 vil1" colspan='3'></tr> <th class="gray gray1 vil2" colspan='3'></tr>
+        <th class="gray gray1 vil3" colspan='3'></tr> <th class="gray gray1 vil4" colspan='3'></tr>
+        <th class="gray gray1 vil5" colspan='3'></tr> <th class="gray gray1 vil6" colspan='3'></tr>
+        <th class="gray gray1 vil7" colspan='3'></tr> <th class="gray gray1 vil8" colspan='3'></tr>
+        <th class="gray gray1 vil9" colspan='3'></tr> <th class="gray gray1 vil10" colspan='3'></tr>
+        <th class="gray gray1 vil11" colspan='3'></tr><th class="gray gray1 vil12" colspan='3'></tr>
+        <th class="gray gray1 vil13" colspan='3'></tr><th class="gray gray1 vil14" colspan='3'></tr>
+        <th class="gray gray1 vil15" colspan='3'></tr><th class="gray gray1 vil16" colspan='3'></tr>
+        <th class="gray gray1 vil17" colspan='3'></tr>
+      </tbody>
+      <tbody id="predict_table">
+        <tr class="info"><td colspan='3'>占い済1</td></tr>
+        <tr class="success"><th>日付</th><th>名前</th><th>結果</th></tr>
+        <tr id="table1-1"><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="1日目">1日目</button></th><th id="predict1-1">×</th><td id="result1-1"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="2日目">2日目</button></th><th id="predict1-2">×</th><td id="result1-2"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="3日目">3日目</button></th><th id="predict1-3">×</th><td id="result1-3"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="4日目">4日目</button></th><th id="predict1-4">×</th><td id="result1-4"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="5日目">5日目</button></th><th id="predict1-5">×</th><td id="result1-5"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="6日目">6日目</button></th><th id="predict1-6">×</th><td id="result1-6"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="7日目">7日目</button></th><th id="predict1-7">×</th><td id="result1-7"></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict1" data-toggle="modal" data-target="#predictModal" value="8日目">8日目</button></th><th id="predict1-8">×</th><td id="result1-8"></td></tr>
+      </tbody>
+    </table>
+  </div>
   
-<ul class="nav nav-tabs">
-<li class="active"><a href="#tab1" data-toggle="tab">メモツール</a></li>
-<li><a href="#tab2" data-toggle="tab">その他</a></li>
-</ul>
-
-
-<div id="myTabContent" class="tab-content">
-<div class="tab-pane fade in active" id="tab1">
-
-<div id='gray_scale' class='container'>
-  <div id='case1'>
-    <h3>生存数</h3><h3 id="alive"></h3>
-    <h3>グレー数</h3><h3 id="gray"></h3>
+  <div id="left">
+    <table class="table table-condensed">
+      <tbody id="header_table">
+        <tr class="info"><td colspan='1'>占い師2</td>
+        <td colspan='2'><h4 id="predict2"></h4></td></tr>
+      </tbody>
+      <tbody id="gray_table">
+        <th class="success grayList" colspan='3'>グレー</th></tr>
+        <th class="gray gray2 vil1" colspan='3'></tr><th class="gray gray2 vil2" colspan='3'></tr>
+        <th class="gray gray2 vil3" colspan='3'></tr><th class="gray gray2 vil4" colspan='3'></tr>
+        <th class="gray gray2 vil5" colspan='3'></tr><th class="gray gray2 vil6" colspan='3'></tr>
+        <th class="gray gray2 vil7" colspan='3'></tr><th class="gray gray2 vil8" colspan='3'></tr>
+        <th class="gray gray2 vil9" colspan='3'></tr><th class="gray gray2 vil10" colspan='3'></tr>
+        <th class="gray gray2 vil11" colspan='3'></tr><th class="gray gray2 vil12" colspan='3'></tr>
+        <th class="gray gray2 vil13" colspan='3'></tr><th class="gray gray2 vil14" colspan='3'></tr>
+        <th class="gray gray2 vil15" colspan='3'></tr><th class="gray gray2 vil16" colspan='3'></tr>
+        <th class="gray gray2 vil17" colspan='3'></tr>
+      </tbody>
+      <tbody id="predict_table">
+        <tr class="info"><td colspan='3'>占い済2</td></tr>
+        <tr class="success"><th>日付</th><th>名前</th><th>結果</th></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="1日目">1日目</button></th><th id="predict2-1">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="2日目">2日目</button></th><th id="predict2-2">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="3日目">3日目</button></th><th id="predict2-3">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="4日目">4日目</button></th><th id="predict2-4">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="5日目">5日目</button></th><th id="predict2-5">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="6日目">6日目</button></th><th id="predict2-6">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="7日目">7日目</button></th><th id="predict2-7">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict2" data-toggle="modal" data-target="#predictModal" value="8日目">8日目</button></th><th id="predict2-8">×</th><td></td></tr>
+    </table>
   </div>
-  <div id='case2'>
-    かきくけこ
+  
+
+
+  <div id="left">
+    <table class="table table-condensed">
+      <tbody id="header_table">
+        <tr class="info"><td colspan='1'>占い師3</td>
+        <td colspan='2'><h4 id="predict3"></h4></td></tr>
+      </tbody>
+      <tbody id="gray_table">
+        <th class="success grayList" colspan='3'>グレー</th></tr>
+        <th class="gray gray3 vil1" colspan='3'></tr><th class="gray gray3 vil2" colspan='3'></tr>
+        <th class="gray gray3 vil3" colspan='3'></tr><th class="gray gray3 vil4" colspan='3'></tr>
+        <th class="gray gray3 vil5" colspan='3'></tr><th class="gray gray3 vil6" colspan='3'></tr>
+        <th class="gray gray3 vil7" colspan='3'></tr><th class="gray gray3 vil8" colspan='3'></tr>
+        <th class="gray gray3 vil9" colspan='3'></tr><th class="gray gray3 vil10" colspan='3'></tr>
+        <th class="gray gray3 vil11" colspan='3'></tr><th class="gray gray3 vil12" colspan='3'></tr>
+        <th class="gray gray3 vil13" colspan='3'></tr><th class="gray gray3 vil14" colspan='3'></tr>
+        <th class="gray gray3 vil15" colspan='3'></tr><th class="gray gray3 vil16" colspan='3'></tr>
+        <th class="gray gray3 vil17" colspan='3'></tr>
+       </tbody>
+       <tbody id="predict_table">
+        <tr class="info"><td colspan='3'>占い済3</td></tr>
+        <tr class="success" id="grayList"><th>日付</th><th>名前</th><th>結果</th></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="1日目">1日目</button></th><th id="predict3-1">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="2日目">2日目</button></th><th id="predict3-2">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="3日目">3日目</button></th><th id="predict3-3">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="4日目">4日目</button></th><th id="predict3-4">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="5日目">5日目</button></th><th id="predict3-5">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="6日目">6日目</button></th><th id="predict3-6">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="7日目">7日目</button></th><th id="predict3-7">×</th><td></td></tr>
+        <tr><th><button type="button" class="btn-primary btn-xm predict predict3" data-toggle="modal" data-target="#predictModal" value="8日目">8日目</button></th><th id="predict3-8">×</th><td></td></tr>
+      </tbody> 
+    </table>
   </div>
-  <div id='case3'>
-    さしすせそ
+  
+    <div id="left">
+    <table class="table table-condensed">
+      <tbody id="header_table">
+        <tr class="info"><td colspan='3'>死亡済</td></tr>
+        <tr class="successs">
+          <th>日付</th><th>噛み</th><th>吊り</th></th>
+        </tr>
+      </tbody>
+      <tbody>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">1日目</button></th>
+        <th class="villagers">第一犠牲者</th><th id="hang1">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">2日目</button></th>
+        <th id="bite2">×</th><th id="hang2">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">3日目</button></th>
+        <th id="bite3">×</th><th id="hang3">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">4日目</button></th>
+        <th id="bite4">×</th><th id="hang4">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">5日目</button></th>
+        <th id="bite5">×</th><th id="hang5">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">6日目</button></th>
+        <th id="bite6">×</th><th id="hang6">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">7日目</button></th>
+        <th id="bite7">×</th><th id="hang7">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">8日目</button></th>
+        <th id="bite8">×</th><th id="hang8">×</th></tr>
+        <th><button type="button" class="btn-primary btn-xm death" data-toggle="modal" data-target="#deathModal">9日目</button></th>
+        <th id="bite9">×</th><th id="hang9">×</th></tr>
+        </tdoby></table>
   </div>
-</div>
- 
 
-<table class="table table-condensed">
-
-<tbody id="header_table">
-<tr class="success">
-<th>名前</th><th>アクション</th><th>CO</th>
-<th>占い1</th><th>占い2</th><th>占い3</th>
-<th>霊能1</th><th>霊能2</th>
-<th>吊り</th><th>噛み</th>
-</tr>
-</tbody>
-<tbody id="urarei_table">
-<tr class="warning">
-<th></th><th></th><th></th>
-<th class="fortune1"></th><th class="fortune2"></th><th class="fortune3"></th>
-<th class="spiritual1"></th><th class="spiritual2"></th>
-<th></th><th></th>
-</tr>
-</tbody>
-
-
-<tbody id="gray_table">
-<tr id="grayList" class='info'>
-<td  colspan='10'>グレー</td>
-</tr>
-
-<tr class="danger">
-<td id='vil1' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-<tr class="danger">
-<td id='vil2' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-<tr class="danger">
-<td id='vil3' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil4' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil5' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil6' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil8' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil9' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil10' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-<tr class="danger">
-<td id='vil11' class='villagers'></td>
-<td><button type="button" class="btn-primary btn-xs vil_button" data-toggle="modal" data-target="#jobModal">アクション</button></td>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-</tr>
-</tbody>
-
-
-<tbody id="job_table">
-<tr class="info">
-	<td colspan='10'>役職</td>
-</tr>
-<tr id="jobList"></tr>
-</tbody>
-
-<tbody id="death_table">
-<tr class="info"  id='deathList'>
-	<td colspan='10'>死亡</td>
-
-</tr>
-</tbody>
-</table>
- 
- 
-  <div id='footer' class='container'>
-  	<textarea id="member" class="span5"></textarea>
-  	<button type="submit" id="memberInput" class="btn btn-primary">村人登録</button>
-    <button type="button" id="testbtn" class="btn-primary btn-xs vil_button">テストボタン</button>
+  
+  
+    <div id="left">
+    <table class="table table-condensed">
+      <tbody id="header_table">
+        <tr class="info"><td colspan='3'>役職</td></tr>
+        <tr class="success"><th>役職名</th><th>名前</th><th>内訳予想</th></tr>
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">占い1</button></th><th id="job1">×</th><th></th></tr>
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">占い2</button></th><th id="job2">×</th><th></th></tr> 
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">占い3</button></th><th id="job3">×</th><th></th></tr> 
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">霊能1</button></th><th id="job4">×</th><th></th></tr> 
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">霊能2</button></th><th id="job5">×</th><th></th></tr> 
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">共有1</button></th><th id="job6">×</th><th></th></tr> 
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">共有2</button></th><th id="job7">×</th><th></th></tr> 
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">狩人1</button></th><th id="job8">×</th><th></th></tr>       
+        <tr class="success">
+          <th><button type="button" class="btn-primary btn-xm co" data-toggle="modal" data-target="#coModal">狩人2</button></th><th id="job9">×</th><th></th></tr> 
+        </tbody>
+    </table>
   </div>
-</div>
+  
+  
 
 
-<div class="tab-pane fade" id="tab2">
-    <p1 class="bg-success">製作者</p>
-    <p2 class="bg-info">@FLXIBLUE</p>
-    <p1 class="bg-success">更新履歴</p>
-    <p2 class="bg-info">2016/12/31:ver1.0</p>
-    <p2 class="bg-info">2017/12/31:ver1.1</p>
-</div>
-
-</div>
- 
-
-<div class="modal fade" id="jobModal">
+<div class="modal fade" id="coModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title"></h2>
+        <h2 id="co-title"></h2>
+        <h3 id="co-name"></h3>
       </div>
       <div class="modal-body">
-        <h2>CO</h2>
-		    <button type="button" class="btn-primary btn-xm co" id="fortune"   data-dismiss="modal">占い師</button>
-      	<button type="button" class="btn-primary btn-xm co" id="spiritual" data-dismiss="modal">霊能</button>
-      	<button type="button" class="btn-primary btn-xm co" id="hunter"    data-dismiss="modal">狩人</button>
-      	<button type="button" class="btn-primary btn-xm co" id="share"     data-dismiss="modal">共有</button></button>
-      	<button type="button" class="btn-primary btn-xm co" id="werewolf"  data-dismiss="modal">狼</button>
-      	<button type="button" class="btn-primary btn-xm co" id="fox"       data-dismiss="modal">狐</button>
-        <button type="button" class="btn-primary btn-xm co" id="cancel"    data-dismiss="modal">キャンセル</button>
-      </div>
-
-<div class="modal-body">
-   <h2>占われ/死亡など</h2>
-  <table class="table table-condensed">
-      <tr class="success">
-      <th></th><th>占い1</th><th>占い2</th><th>占い3</th><th>霊能1</th><th>霊能2</th><th>吊り</th><th>噛み</th>
-      </tr>
-      <tr class="warning">
-        <th></th><th class="fortune1"></th><th class="fortune2"></th><th class="fortune3"></th>
-        <th class="spiritual1"></th><th class="spiritual2"></th><th></th><th></th>
-        <th></th><th></th>
-      </tr>  
-      <tr class="primary">
-      <th>初日</th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white"  data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white2" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black2">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white3" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black3">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm spiritual" id="w"    data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm spiritual" id="w2"   data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b2">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm death" id="hanged"   data-dismiss="modal">吊り</button></th><th>第一犠牲者</th>        
-      </tr>
-      <tr class="primary">
-      <th>二日目</th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white"  data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white2" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black2">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white3" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black3">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm spiritual" id="w"    data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm spiritual" id="w2"   data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b2">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm death" id="hanged"   data-dismiss="modal">吊り</button></th>
-      <th><button type="button" class="btn-primary btn-xm death" id="bite"     data-dismiss="modal">噛まれ</button></th>        
-      </tr>
-      <tr class="primary">
-      <th>三日目</th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white"  data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white2" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black2">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm fortune" id="white3" data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm fortune" id="black3">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm spiritual" id="w"    data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm spiritual" id="w2"   data-dismiss="modal">○</button><button type="button" class="btn-primary btn-xm spiritual" id="b2">●</button></th>
-      <th><button type="button" class="btn-primary btn-xm death" id="hanged"   data-dismiss="modal">吊り</button></th>
-      <th><button type="button" class="btn-primary btn-xm death" id="bite"     data-dismiss="modal">噛まれ</button></th>        
-      </tr>
-      </tr>
-      <tr class="primary">
-      <th>四日目</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th>        
-      </tr>
-      
-    </tbody>
-</table>
-</div>
+        <h2>対象者</h2>
+		    <button type="button" class="btn-primary btn-xm vil1  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil2  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil3  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil4  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil5  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil6  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil7  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil8  co_b" data-dismiss="modal"></button>
+        <br></br>
+		    <button type="button" class="btn-primary btn-xm vil9  co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil10 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil11 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil12 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil13 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil14 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil15 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil16 co_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil17 co_b" data-dismiss="modal"></button>  
+        <br></br>
+        <button type="button" class="btn-primary btn-xm co_b" data-dismiss="modal">×</button>
+		  </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
       </div>
-      
     </div>
   </div>
 </div>
 
+<div class="modal fade" id="deathModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 id="death-title"></h2>
+      </div>
+
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active"><input type="radio" name="options" id="option1" autocomplete="off" value="通常" checked>通常</label>
+    <label class="btn btn-primary"><input type="radio" name="options" id="option2" autocomplete="off" value="2死体目">2死体目</label>
+  </div>
+  
+      <div class="modal-body">
+        <h2>噛み/対象者</h2>
+		    <button type="button" class="btn-primary btn-xm vil1  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil2  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil3  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil4  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil5  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil6  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil7  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil8  bite_b" data-dismiss="modal"></button>
+        <br></br>
+		    <button type="button" class="btn-primary btn-xm vil9  bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil10 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil11 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil12 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil13 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil14 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil15 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil16 bite_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil17 bite_b" data-dismiss="modal"></button>
+        <br></br>
+        <button type="button" class="btn-primary btn-xm bite_b" data-dismiss="modal">×</button>
+        <h2>吊り/対象者</h2>
+		    <button type="button" class="btn-primary btn-xm vil1  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil2  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil3  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil4  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil5  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil6  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil7  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil8  hang_b" data-dismiss="modal"></button>
+        <br></br>
+		    <button type="button" class="btn-primary btn-xm vil9  hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil10 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil11 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil12 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil13 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil14 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil15 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil16 hang_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil17 hang_b" data-dismiss="modal"></button>
+		    <br></br>
+		    <button type="button" class="btn-primary btn-xm hang_b" data-dismiss="modal">×</button>
+		  </div>
+		  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="predictModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 id="predict-title"></h2>
+      </div>
+      <div id="predict-body">
+        <h2>対象者</h2><br></br>
+        <h2>白</h2>
+		    <button type="button" class="btn-primary btn-xm vil1  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil2  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil3  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil4  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil5  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil6  predict_b" data-dismiss="modal"></button>
+        <br></br>
+		    <button type="button" class="btn-primary btn-xm vil7  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil8  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil9  predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil10 predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil11 predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil12 predict_b" data-dismiss="modal"></button>
+		    <br></br>
+		    <button type="button" class="btn-primary btn-xm vil13 predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil14 predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil15 predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil16 predict_b" data-dismiss="modal"></button>
+		    <button type="button" class="btn-primary btn-xm vil17 predict_b" data-dismiss="modal"></button>
+        <br></br>
+        <h2>黒</h2>
+		    <button type="button" class="btn-warning btn-xm vil1  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil2  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil3  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil4  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil5  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil6  predict_b black" data-dismiss="modal"></button>
+		    <br></br>
+		    <button type="button" class="btn-warning btn-xm vil7  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil8  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil9  predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil10 predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil11 predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil12 predict_b black" data-dismiss="modal"></button>
+		    <br></br>
+		    <button type="button" class="btn-warning btn-xm vil13 predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil14 predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil15 predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil16 predict_b black" data-dismiss="modal"></button>
+		    <button type="button" class="btn-warning btn-xm vil17 predict_b black" data-dismiss="modal"></button>
+		  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="footer">
+  	<textarea id="member" class="span5"></textarea>
+  	<button type="submit" id="memberInput" class="btn btn-primary">村人登録</button>
+    <button type="button" id="testbtn" class="btn-primary btn-xs vil_button">テストボタン</button>
+  </div>
+  
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
